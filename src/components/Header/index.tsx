@@ -15,13 +15,12 @@ const ImgHeader = styled.img`
 
 const MenuHeader = styled.div`
     display: flex;
-    position: absolute;
     align-items: center;
     flex-direction: column;
     justify-content: center;
     background-color: rgba(255, 255, 255, 0);
     backdrop-filter: blur(3px);
-    height: 50%;
+    
     width: 100%;
 
     @media screen and (max-width: 768px) {
@@ -41,7 +40,7 @@ const Logo = styled.img`
 `;
 
 const LinkMenu = styled.a`
-    color: #FFFFFF;
+    color: #000;
     text-decoration: none;
     font-size: 18px;
     width: 150px;
@@ -153,8 +152,7 @@ export default function Header() {
 
     return (
         <HeaderComponent>           
-            <ImgHeader src={fundoHeader} alt="" />   
-                        
+                                    
             <MenuHeader>
 
                 <Logo src={logo} alt=""/>

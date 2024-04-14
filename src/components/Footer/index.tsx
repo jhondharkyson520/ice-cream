@@ -102,11 +102,14 @@ export default function Footer(){
                 </TextTituloFooter>
 
                 <ContainerFooterSocialMedias>
-                    <StyledLink href="https://www.instagram.com/seu-usuario-do-instagram" target="_blank" rel="noopener noreferrer">
+                    <StyledLink href="https://www.instagram.com/sorveteria.pinguim_/" target="_blank" rel="noopener noreferrer">
                         <InstagramIcon size={20}/>
                     </StyledLink>
                     <StyledLink href="https://api.whatsapp.com/send?phone=5534984307981&text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de" target="_blank" rel="noopener noreferrer">
                         <WhatsappIcon size={20}/>
+                    </StyledLink>
+                    <StyledLink href="mailto:sorveteriapinguim4@gmail.com" target="_blank" rel="noopener noreferrer">
+                        <TfiEmail size={20}/>
                     </StyledLink>
                 </ContainerFooterSocialMedias>
                 
@@ -128,7 +131,7 @@ export default function Footer(){
                     <ContainerItemsContato>
                         <FaMapLocationDot size={20}/>
                         <TextFooter>
-                            Av. Aurélio Luiz Mistieri, 200, Sala1 - <br/>Fronteira, MG
+                            Av. Aurélio Luiz Mistieri, 270, Sala1 - <br/>Fronteira, MG
                         </TextFooter>
                     </ContainerItemsContato>
 

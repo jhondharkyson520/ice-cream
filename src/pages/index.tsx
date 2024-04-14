@@ -1,26 +1,26 @@
 import styled from "styled-components";
 
-import imgHome from '../../assets/Home/imgHome.png';
+import imgHome from '../assets/Home/imgHome.png';
 
-import imgDescubra1 from '../../assets/Home/imgDescubra1.png';
-import imgDescubra2 from '../../assets/Home/imgDescubra2.png';
-import imgDescubra3 from '../../assets/Home/imgDescubra3.png';
+import imgDescubra1 from '../assets/Home/imgDescubra1.png';
+import imgDescubra2 from '../assets/Home/imgDescubra2.png';
+import imgDescubra3 from '../assets/Home/imgDescubra3.png';
 
-import imgOndeEstamos from '../../assets/Home/imgOndeEstamos.png';
+import imgOndeEstamos from '../assets/Home/imgOndeEstamos.png';
 
-import imgAcaiProduct from '../../assets/Products/imgAcaiProduct.png';
-import imgBananaSplitProduct from '../../assets/Products/imgBanaSplit.png';
-import imgCopoAcaiProduct from '../../assets/Products/imgCopoAcaiProduct.png';
-import imgCopoSorveteProduct from '../../assets/Products/imgCopoSorveteProduct.png';
-import imgSorveteExpressoProduct from '../../assets/Products/imgSorveteExpresso.png';
-import imgSundaeProduct from '../../assets/Products/imgSundaeProduct.png';
+import imgAcaiProduct from '../assets/Products/imgAcaiProduct.png';
+import imgBananaSplitProduct from '../assets/Products/imgBanaSplit.png';
+import imgCopoAcaiProduct from '../assets/Products/imgCopoAcaiProduct.png';
+import imgCopoSorveteProduct from '../assets/Products/imgCopoSorveteProduct.png';
+import imgSorveteExpressoProduct from '../assets/Products/imgSorveteExpresso.png';
+import imgSundaeProduct from '../assets/Products/imgSundaeProduct.png';
 
-import imgContainerInsta1 from '../../assets/Outras/imgInsta1.png';
-import imgContainerInsta2 from '../../assets/Outras/imgInsta2.png';
-import imgContainerInsta3 from '../../assets/Outras/imgInsta3.png';
-import imgContainerInsta4 from '../../assets/Outras/imgInsta4.png';
-import imgContainerInsta5 from '../../assets/Outras/imgInsta5.png';
-import imgContainerInsta6 from '../../assets/Outras/imgInsta6.png';
+import imgContainerInsta1 from '../assets/Outras/imgInsta1.png';
+import imgContainerInsta2 from '../assets/Outras/imgInsta2.png';
+import imgContainerInsta3 from '../assets/Outras/imgInsta3.png';
+import imgContainerInsta4 from '../assets/Outras/imgInsta4.png';
+import imgContainerInsta5 from '../assets/Outras/imgInsta5.png';
+import imgContainerInsta6 from '../assets/Outras/imgInsta6.png';
 
 import { FaInstagram } from "react-icons/fa";
 
@@ -31,6 +31,7 @@ const HomePage = styled.div`
     justify-content: center;
     margin-top: 80px;
     gap: 5%;
+    overflow-x: hidden;
 
     @media screen and (max-width: 768px) {
         flex-direction: column;
