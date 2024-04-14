@@ -1,5 +1,4 @@
 import styled from "styled-components";
-import fundoHeader from '../../assets/Header/imageHeader.png';
 import logo from '../../assets/Header/logo.svg';
 import { useState } from "react";
 import { IoMenu} from "react-icons/io5";
@@ -8,10 +7,6 @@ const HeaderComponent = styled.header`
     justify-content: center;
 `;
 
-const ImgHeader = styled.img`
-    width: 100%;
-    height: 80vh;
-`;
 
 const MenuHeader = styled.div`
     display: flex;
