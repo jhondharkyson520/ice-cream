@@ -30,7 +30,7 @@ const Logo = styled.img`
 
     @media screen and (max-width: 768px) {
         padding-left: 40px;
-        width: 200px;
+        width: 300px;
     }
 `;
 
@@ -90,7 +90,7 @@ const ButtonHamburguer = styled.button`
 const ContainerListaHambuguerMenu = styled.div`
     background-color: white;    
     width: 100%;
-    height: 350px;
+    height: 450px;
     position: fixed;
     overflow: hidden;
     justify-content: center;
@@ -98,20 +98,21 @@ const ContainerListaHambuguerMenu = styled.div`
     display: flex;
     align-items: baseline;
     border-radius: 0 0 0 15%;
-   
     
 `;
 
 const ListaMenuHamburguer = styled.ul`
     display: flex;
     flex-direction: column;
+    padding-top: 12rem;
+    padding-bottom: 1rem;
     align-items: center;
-    margin-top: 100px;
     list-style-type: none;
     position: absolute;
 `;
 
 const ListaMenuHamburguerItem = styled.li`
+    
     margin-bottom: 1rem;
     
 `;

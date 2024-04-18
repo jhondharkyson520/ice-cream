@@ -14,6 +14,10 @@ import imgCopoAcaiProduct from '../assets/Products/imgCopoAcaiProduct.png';
 import imgCopoSorveteProduct from '../assets/Products/imgCopoSorveteProduct.png';
 import imgSorveteExpressoProduct from '../assets/Products/imgSorveteExpresso.png';
 import imgSundaeProduct from '../assets/Products/imgSundaeProduct.png';
+import imgSorveteZeroProduct from '../assets/Products/imgSorveteZero.jpeg';
+import imgBoloSorveteProduct from '../assets/Products/boloSorvete.jpeg';
+import imgMilkShakeProduct from '../assets/Products/imgMilkShake.jpg';
+import imgPetitGateauProduct from '../assets/Products/imgPetitGateau.jpeg';
 
 import imgContainerInsta1 from '../assets/Outras/imgInsta1.png';
 import imgContainerInsta2 from '../assets/Outras/imgInsta2.png';
@@ -21,6 +25,7 @@ import imgContainerInsta3 from '../assets/Outras/imgInsta3.png';
 import imgContainerInsta4 from '../assets/Outras/imgInsta4.png';
 import imgContainerInsta5 from '../assets/Outras/imgInsta5.png';
 import imgContainerInsta6 from '../assets/Outras/imgInsta6.png';
+
 
 import { FaInstagram } from "react-icons/fa";
 
@@ -36,7 +41,6 @@ const HomePage = styled.div`
     @media screen and (max-width: 768px) {
         flex-direction: column;
         align-items: center;
-        padding: 0 5rem 0 2rem;
     }
 `;
 
@@ -164,6 +168,7 @@ const ContainerProdutos = styled.div`
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-items: center;
     gap: 2rem;
     padding: 0 10rem 0 10rem;
 
@@ -196,6 +201,8 @@ const ImgProducts = styled.img`
 
     width: 150px;
     height: 150px;
+    align-items: center;
+    margin-top: 1rem;
 
     @media screen and (max-width: 768px){
         width: 200px;
@@ -212,6 +219,7 @@ const TextDescription = styled.p`
     font-size: 16px;
     color: #7E8690;
     font-family: 'Open Sans', sans-serif;
+    margin-left: 1rem;
 
     
 `;
@@ -309,6 +317,7 @@ const SubTitleText = styled.h1`
     font-family: 'Cardo';
     font-weight: bold;
     font-size: 20px;
+    margin-left: 1rem;
 `;
 
 const TextLargeImage = styled.h1`
@@ -337,6 +346,13 @@ export default function Home(){
     const handleOndeEstamos = () => {
         window.open('https://www.google.com/maps/dir//Avenida+Aur%C3%A9lio+Luiz+Mistiere+270+Andar+2+sl+13,+Fronteira+-+MG,+38230-000/@-20.2814494,-49.2864693,12z/data=!4m8!4m7!1m0!1m5!1m1!1s0x94bcddaa5ba1111d:0xa9dabde054b21a18!2m2!1d-49.2040676!2d-20.2814687?entry=ttu', '_blank');
       };
+    const handleFaleConosco = () => {
+        window.open('https://api.whatsapp.com/send?phone=5534984307981&text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de', '_blank');
+    };
+
+    const handleSigaAGente = () => {
+        window.open('https://www.instagram.com/sorveteria.pinguim_/', '_blank');
+    };
 
     return(
         <main>
@@ -484,10 +500,51 @@ export default function Home(){
                                                    
                     </ItemsProdutos>
 
+                    <ItemsProdutos>
+                        <ImgProducts src={imgPetitGateauProduct} />
+                        <ContainerAlignProducts>
+                            <SubTitleText>Petit Gateau</SubTitleText>
+                            <TextDescription>
+                                Mime-se com nosso Petit Gateau, uma explosão de sabor em cada mordida. Experimente a perfeita combinação de bolo quente e recheio derretido, com certeza você vai ficar querendo mais.
+                            </TextDescription>
+                        </ContainerAlignProducts>
+                    </ItemsProdutos>
+
+                    <ItemsProdutos>
+                        <ImgProducts src={imgMilkShakeProduct} />
+                        <ContainerAlignProducts>
+                            <SubTitleText>Milkshake</SubTitleText>
+                            <TextDescription>
+                                Refresque-se com nosso Milkshake, uma mistura irresistível de cremosidade e sabor. Escolha entre uma variedade de opções e saboreie a combinação perfeita de sabor e frescor.
+                            </TextDescription>
+                        </ContainerAlignProducts>
+                    </ItemsProdutos>
+
+                    <ItemsProdutos>
+                        <ImgProducts src={imgSorveteZeroProduct} />
+                        <ContainerAlignProducts>
+                            <SubTitleText>Sorvete Zero Açúcar</SubTitleText>
+                            <TextDescription>
+                                Desfrute do prazer do sorvete sem culpa com nosso Sorvete Zero. Delicie-se com sabores premium sem adição de açúcar, uma experiência deliciosa sem comprometer sua dieta.
+                            </TextDescription>
+                        </ContainerAlignProducts>
+                    </ItemsProdutos>
+
+                    <ItemsProdutos>
+                        <ImgProducts src={imgBoloSorveteProduct} />
+                        <ContainerAlignProducts>
+                            <SubTitleText>Bolo de Sorvete</SubTitleText>
+                            <TextDescription>
+                                Celebre cada momento com nosso Bolo de Sorvete, uma fusão perfeita de texturas e sabores. Permita-se uma experiência única com camadas de sorvete cremoso e recheios deliciosos.
+                            </TextDescription>
+                        </ContainerAlignProducts>
+                    </ItemsProdutos>
+
+
             </ContainerProdutos>
 
             <ContainerButtonHome id='contato'>
-                    <StyledButtonHome>Fale Conosco!</StyledButtonHome>
+                    <StyledButtonHome onClick={handleFaleConosco}>Fale Conosco!</StyledButtonHome>
             </ContainerButtonHome>
 
             <ContainerInstagramSiga>
@@ -497,7 +554,7 @@ export default function Home(){
                 <ImgFundoInstagramSiga src={imgContainerInsta4}/>
                 <ImgFundoInstagramSiga src={imgContainerInsta5}/>
                 <ImgFundoInstagramSiga src={imgContainerInsta6}/>
-                <ContainerButtonSobreImagens>
+                <ContainerButtonSobreImagens onClick={handleSigaAGente}>
                     <FaInstagram size={25}/>  <p>Siga a gente!</p>
                 </ContainerButtonSobreImagens>
             </ContainerInstagramSiga>
