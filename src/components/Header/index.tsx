@@ -139,7 +139,7 @@ export default function Header() {
     const [openMenu, setOpenMenu] = useState(false);
 
     const handleContato = () => {
-        window.open('https://api.whatsapp.com/send?phone=5534984307981&text=Olá, tudo bem? Gostaria de ', '_blank');
+        window.open('https://www.instagram.com/sorveteria.pinguim_/', '_blank');
       };
 
     const toggleMenu = () => {

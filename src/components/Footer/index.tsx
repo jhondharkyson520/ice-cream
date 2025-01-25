@@ -37,6 +37,7 @@ const TextTituloFooter = styled.h1`
 
 const ContainerFooterSocialMedias = styled.div`
     display: flex;
+    justify-content: center;
     gap: 1rem;
 `;
 
@@ -81,15 +82,6 @@ const InstagramIcon = styled(FaInstagram)`
     }
 `;
 
-const WhatsappIcon = styled(FaWhatsapp)`
-    cursor: pointer;
-    transition: transform 0.9s;
-
-    &:hover {
-        transform: scale(1.2);
-    }
-`;
-
 export default function Footer(){
     return(
         
@@ -104,9 +96,6 @@ export default function Footer(){
                 <ContainerFooterSocialMedias>
                     <StyledLink href="https://www.instagram.com/sorveteria.pinguim_/" target="_blank" rel="noopener noreferrer">
                         <InstagramIcon size={20}/>
-                    </StyledLink>
-                    <StyledLink href="https://api.whatsapp.com/send?phone=5534984307981&text=Ol%C3%A1,%20tudo%20bem?%20Gostaria%20de" target="_blank" rel="noopener noreferrer">
-                        <WhatsappIcon size={20}/>
                     </StyledLink>
                     <StyledLink href="mailto:sorveteriapinguim4@gmail.com" target="_blank" rel="noopener noreferrer">
                         <TfiEmail size={20}/>
@@ -149,7 +138,7 @@ export default function Footer(){
                         Segunda - Quinta
                     </TextFooter>                
                     <TextFooterWhiteBold>
-                        12:00 - 22:00
+                        13:00 - 22:00
                     </TextFooterWhiteBold>
 
                     <TextFooter>
