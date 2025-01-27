@@ -1,5 +1,5 @@
 import styled from "styled-components";
-import { FaInstagram, FaWhatsapp } from "react-icons/fa";
+import { FaInstagram} from "react-icons/fa";
 import { TfiEmail } from "react-icons/tfi";
 import { FaMapLocationDot } from "react-icons/fa6";
 
